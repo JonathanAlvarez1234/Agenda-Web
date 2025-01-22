@@ -1,62 +1,90 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #9214fa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
-  .container {
-    background-color: rgb(231, 230, 233);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 80%;
-    max-width: 800px;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .contact-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.contact-table th,
+.contact-table td {
+  padding: 15px;
+  text-align: left;
+}
+
+.contact-table thead {
+  background-color: #007BFF;
+  color: white;
+}
+
+.contact-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.contact-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.contact-table th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-table td {
+  color: #555;
+}
+
+.action-btn {
+  padding: 8px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.action-btn:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
   .contact-table th, .contact-table td {
-    padding: 12px;
-    text-align: left;
-    font-size: 14px;
+    padding: 10px;
   }
-  
-  .contact-table thead {
-    background-color: #20d6d6;
-    color: white;
+
+  .contact-table {
+    font-size: 12px;
   }
-  
-  .contact-table tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  .contact-table tbody tr:hover {
-    background-color: #e0e0e0;
-  }
-  
-  .contact-table th {
-    font-weight: bold;
-  }
-  
-  .contact-table td {
-    color: #555;
-  }
+}
