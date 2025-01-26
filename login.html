@@ -17,6 +17,9 @@
                 <a href="" class="navbar-brand">
                     <h1 class="m-0 text-primary"><span class="text-dark">Agenda </span>Web</h1>
                 </a>
+                <button class="profile-image-button" data-bs-toggle="modal" data-bs-target="#userModal">
+                    <img src="https://cdn-icons-png.flaticon.com/512/9187/9187604.png" alt="Perfil" />
+                  </button>
             </nav>
         </div>
     </div>
@@ -63,6 +66,19 @@
             return true;
         }
     </script>
+
+<div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="userModalLabel">Información Personal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Nombres:</strong> Jonathan Alvarez</p>
+          <p><strong>Apellidos:</strong> Alvarez Aguilar</p>
+          <p><strong>Teléfono:</strong> 5131-6646</p>
+          <p><strong>Correo:</strong> jalvarez-2023415@kinal.edu.gt</p>
 
 </body>
 </html>
