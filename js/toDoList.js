@@ -54,9 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     `;
                     listaTInput.appendChild(listItem);
                     if (prioridad === "urgente") {
-                        listaTInput.insertBefore(listItem, listaTInput.firstChild); // Agregar al inicio
+                        listaTInput.insertBefore(listItem, listaTInput.firstChild);
                     } else {
-                        listaTInput.appendChild(listItem); // Agregar al final
+                        listaTInput.appendChild(listItem);
                     }
                 } else {
                     reject("No se pudo agregar la tarea a la base de datos");
