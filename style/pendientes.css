@@ -1,0 +1,133 @@
+body{
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: #cb79fa;
+}
+
+label {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-weight: bold;
+    display:contents ;
+    margin-bottom: 5px;
+    font-size: 35px;
+    color: #90cbfc;
+}
+.contenedor {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+
+input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fffdfd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+select {
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color:#ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+
+li {
+    text-align: left;
+    margin-left: 220px;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li.urgente {
+    border-left: 5px solid red;
+    background-color: #ffe6e6;
+}
+
+#listaT li span {
+    flex-grow: 1; 
+    text-align: left;
+}
+
+#listaT li .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+li button {
+    margin-left: 50px;
+    padding: 5px 10px;
+    font-size: 14px;
+    gap: 30px;
+}
+
+#listaT li.completado {
+    background-color: #bd8edd;
+    border-color: #dfaec9;
+    color: #6cbde2;
+}
+
+@media (max-width: 600px) {
+    input[type="text"], select, button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li span {
+        margin-bottom: 10px;
+    }
+
+    li button {
+        margin: 5px 0 0;
+    }
+}
