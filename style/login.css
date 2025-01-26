@@ -257,7 +257,7 @@ body {
 }
 
 .button__text{
-  text-decoration: ;
+  text-decoration:dashed ;
 }
 
 .social-login {	
@@ -285,4 +285,12 @@ body {
 
 .social-login__icon:hover {
 	transform: scale(1.5);	
+}
+
+.form-title {
+	text-align: center;
+	font-size: 3rem;
+	color: #D8BFD8;
+	font-weight: bold;
+	margin-bottom: 20px;
 }

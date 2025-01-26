@@ -1,78 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactos</title>
-    <link rel="stylesheet" href="/style/contactos.css">
-</head>
-<body>
-
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contactos</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
+      <link rel="stylesheet" href="./style/contactos.css">
+  </head>
+  <body>
+      <div class="container">
+          <h1>Lista de Contactos</h1>
+          <table class="contact-table">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Estado</th>
+                <th>Detalles</th>
+              </tr>
+            </thead>
 
-    <div class="container">
-        <h1>Lista de Contactos</h1>
-        <table class="contact-table">
-          <thead>
-            <tr>
-              <th>Nombre</th>
-              <th>Teléfono</th>
-              <th>Correo Electrónico</th>
-              <th>Dirección</th>
-              <th>Fecha de Nacimiento</th>
-              <th>Estado</th>
-              <th>Acciones</th>
+            <tbody>
+              <tr>
+                <td>Rene Oxcal</td>
+                <td>15/05/2006</td>
+                <td>Activo</td>
+                <td><button class="action-btn" onclick="toggleDetails(this)">Ver</button></td>
+              </tr>
+
+              <tr class="details-row">
+                <td colspan="7">
+                    <strong>Detalles:</strong>
+                    <ul>
+                        <li>+502 1111-2222</li>
+                        <li>RenCrosas@email.com</li>
+                        <li>Calle 123</li>
+                        <li>Ocupación: Estudiante</li>
+                        <li>Hobbies: Cocinar</li>
+                        <li>Notas: Prefiere reuniones los fines de semana.</li>
+                    </ul>
+                </td>
             </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Juan Pérez</td>
-              <td>+34 612 345 678</td>
-              <td>juanperez@email.com</td>
-              <td>Calle Ficticia 123</td>
-              <td>15/05/1985</td>
-              <td>Activo</td>
-              <td><button class="action-btn">Ver</button></td>
-            </tr>
-            <tr>
-              <td>Ana García</td>
-              <td>+34 698 765 432</td>
-              <td>anagarcia@email.com</td>
-              <td>Avenida Real 456</td>
-              <td>22/08/1990</td>
-              <td>Inactivo</td>
-              <td><button class="action-btn">Ver</button></td>
-            </tr>
-            <tr>
-              <td>Carlos López</td>
-              <td>+34 634 567 890</td>
-              <td>carloslopez@email.com</td>
-              <td>Calle Luna 789</td>
-              <td>01/11/1980</td>
-              <td>Activo</td>
-              <td><button class="action-btn">Ver</button></td>
-            </tr>
-            <tr>
-              <td>Lucía Martínez</td>
-              <td>+34 654 321 987</td>
-              <td>luciamartinez@email.com</td>
-              <td>Calle Sol 101</td>
-              <td>30/03/1992</td>
-              <td>Activo</td>
-              <td><button class="action-btn">Ver</button></td>
-            </tr>
-            <tr>
-              <td>Pedro Sánchez</td>
-              <td>+34 620 345 876</td>
-              <td>pedrosanchez@email.com</td>
-              <td>Avenida Libertad 202</td>
-              <td>12/06/1987</td>
-              <td>Inactivo</td>
-              <td><button class="action-btn">Ver</button></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    
-</body>
-</html>
+              <tr>
+                <td>Dylan Turuy</td>
+                <td>22/08/2006</td>
+                <td>Inactivo</td>
+                <td><button class="action-btn" onclick="toggleDetails(this)">Ver</button></td>
+              </tr>
+              <tr class="details-row">
+                <td colspan="7">
+                    <strong>Detalles:</strong>
+                    <ul>
+                        <li>+502 2222-3333</li>
+                        <li>Dtuy@email.com</li>
+                        <li>Carretera El Slvador 456</li>
+                        <li>Ocupación: Boxeador</li>
+                        <li>Hobbies: Dibujar</li>
+                        <li>Notas: Prefiere el pelo largo.</li>
+                    </ul>
+                </td>
+
+              <tr>
+                <td>Humberto Castro</td>
+                <td>01/11/2005</td>
+                <td>Activo</td>
+                <td><button class="action-btn" onclick="toggleDetails(this)">Ver</button></td>
+              </tr>
+              <tr class="details-row">
+                <td colspan="7">
+                    <strong>Detalles:</strong>
+                    <ul>
+                        <li>+502 3333-4444</li>
+                        <li>Xibalba@email.com</li>
+                        <li>El Trebol </li>
+                        <li>Ocupación: Estudiante</li>
+                        <li>Hobbies: Reparar CPU's</li>
+                        <li>Notas: No contesta a veces.</li>
+                    </ul>
+                </td>
+
+              <tr>
+                <td>Andril Rolando</td>
+                <td>30/03/2006</td>
+                <td>Activo</td>
+                <td><button class="action-btn" onclick="toggleDetails(this)">Ver</button></td>
+              </tr>
+              <tr class="details-row">
+                <td colspan="7">
+                    <strong>Detalles:</strong>
+                    <ul>
+                        <li>+502 4444-5555</li>
+                        <li>j.lopez@email.com</li>
+                        <li>Villa Nueva</li>
+                        <li>Ocupación: Estudiante</li>
+                        <li>Hobbies: Jugar futbol</li>
+                        <li>Notas: Como Molesta.</li>
+                    </ul>
+                </td>
+
+              <tr>
+                <td>Lisandro Jimenez</td>
+                <td>12/06/2007</td>
+                <td>Activo</td>
+                <td><button class="action-btn" onclick="toggleDetails(this)">Ver</button></td>
+              </tr>
+              <tr class="details-row">
+                <td colspan="7">
+                    <strong>Detalles:</strong>
+                    <ul>
+                        <li>+502 5555-7777</li>
+                        <li>CilantroJ@email.com</li>
+                        <li>Villa Nueva</li>
+                        <li>Ocupación: Estudiante</li>
+                        <li>Hobbies: Repara fones</li>
+                        <li>Notas: Le sabe a  programar.</li>
+                    </ul>
+                </td>
+            </tbody>
+
+            <div class="mt-4 d-flex justify-content-between">
+              <a href="./nuevoContacto.html" class="btn btn-primary">Agregar Nuevo Contacto</a>
+              <a href="/favoritos/favoritos.html" class="btn btn-info">Favoritos</a>
+            </div>
+          </div>
+
+          </table>
+        </div>
+
+        <script>
+          function toggleDetails(button) {
+            
+              const detailsRow = button.closest('tr').nextElementSibling;
+              if (detailsRow.style.display === 'none' || !detailsRow.style.display) {
+                  detailsRow.style.display = 'table-row';
+                  button.textContent = 'Ocultar';
+              } else {
+                  detailsRow.style.display = 'none';
+                  button.textContent = 'Ver';
+              }
+          }
+      </script>
+
+      
+      
+  </body>
+  </html>
